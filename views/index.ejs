@@ -8,7 +8,8 @@
 </head>
 <body>
     <h1>Index of Matt's Books</h1>
-    <% for(let i = 0; i < books.length; i++) %>
-    <a href = "/books/<%=books[i]._id%>"><%= books[i].image %></a>
+    <% for(let i = 0; i < books.length; i++) { %>
+    <a href = "/books/<%=books[i]._id%>"><img src="<%= books[i].image %>" alt="Book Image"></a>
+    <% } %>
 </body>
 </html>

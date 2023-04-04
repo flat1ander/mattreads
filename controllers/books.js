@@ -23,7 +23,8 @@ router.get ('/seed', async (req, res) => {
 
 // Show
 router.get('/:id', async (req, res) => {
-    res.send('book show route')
+    const books = await Books.findById(req.params.id)
+    res.render('show.ejs', {books})
 })
 
 // Delete 
