@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Entry</title>
+</head>
+<body>
+    <h1>Edit Entry:</h1>
+    <form action="/books/<%=books._id%>?_method=PUT" method="POST">
+    Title: <input type="text" name="title" value="<%= books.title %>">
+    Author: <input type="text" name="author" value="<%= books.author %>">
+    <br>
+    Rating (0-5 stars): <input type="text" name="rating" value="<%= books.rating %>">
+    Synopsis: <input type="text" name="synopsis" value="<%= books.synopsis %>">
+    <br>
+    <input type="submit" value="submit"/>
+    <button type="button"><a href="/books" style="text-decoration: none; color: black;">Back</a></button>
+    </form>
+    <form action="/books/<%=books._id%>?_method=DELETE" method="POST">
+        <input type="submit" value="Delete Book">
+        </form>
+</body>
+</html>

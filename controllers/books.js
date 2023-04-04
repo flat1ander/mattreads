@@ -10,8 +10,14 @@ router.get('/', async (req, res) => {
 })
 
 // Create
-router.post ('/', async (req, res) => {
-    res.send('book post route')
+router.get ('/new', async (req, res) => {
+    res.render('new.ejs')
+})
+
+// Post
+router.post('/', async (req, res) => {
+    const books = await Books.create(req.body);
+    res.redirect('/books')
 })
 
 // Seed
@@ -29,12 +35,20 @@ router.get('/:id', async (req, res) => {
 
 // Delete 
 router.delete('/:id', async (req, res) => {
-    res.send('book delete route')
+    const books = await Books.findByIdAndDelete(req.params.id);
+    res.redirect('/books')
 })
 
-// Update
+// Edit and Update Routes:
+router.get('/:id/edit', async (req, res) => {
+    const books = await Books.findById(req.params.id)
+    res.render('edit.ejs', {books})
+})
+
 router.put('/:id', async (req, res) => {
-    res.send('book update route')
+    const id = req.params.id;
+    const books = await Books.findByIdAndUpdate(id, req.body, {new: true,})
+    res.redirect('/books')
 })
 
 module.exports = router;
