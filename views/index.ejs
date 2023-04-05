@@ -7,14 +7,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index of Books</title>
+    <title>mattreads - Index</title>
 </head>
 <body>
-    <h1>mattreads</h1>
-    <button type="button"><a href="/books/New" style="text-decoration: none; color: black;">Add a New Book</a></button>
+    <h1 style="margin-left: 100px;">mattreads</h1>
+    <button type="button", style="margin-left: 100px;"><a href="/books/New" style="text-decoration: none; color: black;">Add a New Book</a></button>
     <br><br><br>
+    <div id="bookContainer" style="margin: 100px;">
     <% for(let i = 0; i < books.length; i++) { %>
     <a href = "/books/<%=books[i]._id%>"><img src="<%= books[i].image %>" alt="Book Image"></a>
     <% } %>
+    </div>
 </body>
 </html>
