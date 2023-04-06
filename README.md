@@ -3,8 +3,11 @@
 This app is desiged to allow the user to log books they have read. The index page is a large mural of books covers. Clicking a cover brings you to a show page with addiitonal information on the book as well as a rating from 1 to 5 stars.
 
 ## Wireframes
+INDEX PAGE:
 ![alt text](https://i.imgur.com/aVYVyow.png)
 
+SHOW PAGE:
+![alt text](https://i.imgur.com/dfsdUKI.png)
 
 ## User Stories
 - As a user, I will be able to view a database of books that I have already logged and read.
