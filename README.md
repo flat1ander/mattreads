@@ -1,6 +1,6 @@
 # mattreads
 ## A dynamic book database
-This app is desiged to allow the user log books they have read. The index page is a large mural of the logged books covers. Clicking a cover brings you to a show page with addiitonal information on the book as well as a rating from 1 to 5 stars.
+This app is desiged to allow the user log books they have read. The index page is a large mural of books covers. Clicking a cover brings you to a show page with addiitonal information on the book as well as a rating from 1 to 5 stars.
 
 ## User Stories
 - As a user, I will be able to view a database of books that I have already logged and read.
