@@ -2,6 +2,10 @@
 ## A dynamic book database
 This app is desiged to allow the user to log books they have read. The index page is a large mural of books covers. Clicking a cover brings you to a show page with addiitonal information on the book as well as a rating from 1 to 5 stars.
 
+## Wireframes
+![alt text](https://imgur.com/aVYVyow)
+
+
 ## User Stories
 - As a user, I will be able to view a database of books that I have already logged and read.
 - As a user, I will be able to create a new book which posts it to the index.
