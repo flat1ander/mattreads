@@ -3,25 +3,28 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="/stylesheet/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Entry</title>
 </head>
-<body style="margin-left: 100px;">
+<body class = "indexBody" style="margin-left: 100px;">
     <h1>Edit Entry:</h1>
     <form action="/books/<%=books._id%>?_method=PUT" method="POST">
-    Title: <input type="text" name="title" value="<%= books.title %>">
-    Author: <input type="text" name="author" value="<%= books.author %>">
+    Title: <input class="newFormField" type="text" name="title" value="<%= books.title %>">
     <br>
-    Rating: <input type="text" name="rating" value="<%= books.rating %>">
-    Synopsis: <input type="text" name="synopsis" value="<%= books.synopsis %>">
+    Author: <input class="newFormField" type="text" name="author" value="<%= books.author %>">
     <br>
-    <input type="submit" value="submit"/>
-    <button type="button"><a href="/books" style="text-decoration: none; color: black;">Back</a></button>
+    Rating: <input class="newFormField" type="text" name="rating" value="<%= books.rating %>">
+    <br>
+    Synopsis: <input class="newFormField" type="text" name="synopsis" value="<%= books.synopsis %>" size="100" maxlength="100">
+    <br>
+    <input class = "editButtons" type="submit" value="submit" style="text-decoration: none; color: black; background-color: tan"/>
+    <button class = "editButtons" type="button"><a href="/books" style="text-decoration: none; color: black;">Back</a></button>
     </form>
     <form action="/books/<%=books._id%>?_method=DELETE" method="POST">
-        <input type="submit" value="Delete Book">
+        <input class = "editButtons" type="submit" value="Delete Book" style="text-decoration: none; color: black; background-color: tan">
         </form>
 </body>
 </html>

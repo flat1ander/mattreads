@@ -3,20 +3,19 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="/stylesheet/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%=books.title%></title>
 </head>
-<body style="margin: 0px 100px 0px 100px;">
+<body class = "showBody" style="margin: 0px 100px 0px 100px;">
     <h2><%=books.title%></h2>
-    <h4><%=books.author%></h4>
-    <h3><img src="<%=books.image%>" alt="Book Cover Image"></h3>
-    <h5>Rating: <%=books.rating%> stars</h5>
-    <h5>Synopsis: <%=books.synopsis%></h5>
-    <button type="button"><a href="/books/<%= books._id %>/edit" style="text-decoration: none; color: black;">Edit Entry</a></button>
-    <button type="button"><a href="/books" style="text-decoration: none; color: black;">Back</a></button>
-
-    
+    <h4 class = "bookAuthor"><%=books.author%></h4>
+    <h3><img class="bookCover" src="<%=books.image%>" alt="Book Cover Image"></h3>
+    <h5 class = "rating">Rating: <%=books.rating%> stars</h5>
+    <h5 class="synopsis">Synopsis: <%=books.synopsis%></h5>
+    <button class="editButton" type="button"><a href="/books/<%= books._id %>/edit" style="text-decoration: none; color: black;">Edit Entry</a></button>
+    <button class = "backButton" type="button"><a href="/books" style="text-decoration: none; color: black;">Back</a></button>
 </body>
 </html>

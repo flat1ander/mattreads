@@ -1,3 +1,138 @@
 h1 {
-    color: blueviolet;
+    color: tan;
+}
+
+.bookCover {
+    border-color:tan;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 3px;
+    box-shadow: 10px 5px 5px grey;
+    padding: 5px;
+    margin-left:150px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-left: 150px;
+    margin-top:25px;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.bookAuthor {
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rating {
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.editButton {
+    background-color: tan;
+    border-radius: 5px;
+    max-width: fit-content;
+    margin-left: 150px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 10px 5px 5px grey;
+}
+
+.backButton {
+    background-color: tan;
+    border-radius: 5px;
+    max-width: fit-content;
+    margin-left: 150px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.backButtonNew {
+    background-color: tan;
+    border-radius: 5px;
+    max-width: fit-content;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.synopsis {
+    max-width: 600px;
+    margin-left: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content:flex-end
+}
+
+.showBody {
+    background-image: url("../images/40fc65faa2798e1294a93f17d9a7ba39.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.indexBody {
+    background-image: url("../images/hySrQhk9QgN45B-0z8PR0bd8ZRyDZ9LnvzPSGaIb91Q.jpg");
+    color: tan;
+}
+
+.bookCoverIndex {
+    border-color:tan;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    /* box-shadow: 10px 5px 5px tan; */
+    padding: 3px;
+}
+
+.newButton {
+    background-color: tan;
+    font-size: medium;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.addButton {
+    background-color: tan;
+    font-size: medium;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.indexH1 {
+    font-size: xxx-large;
+    color:tan
+}
+
+.newH1 {
+    font-size: xxx-large;
+    color:tan
+}
+
+.newFormField {
+    color: tan;
+}
+
+input[type="text"], textarea {
+    background-color : grey
+}
+
+input[type="number"], textarea {
+    background-color : grey
+}
+
+.editButtons {
+    background-color: tan;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px grey;
+    color: black;
 }
