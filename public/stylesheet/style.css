@@ -1,5 +1,8 @@
+
+
 h1 {
     color: tan;
+    font-size: xxx-large;
 }
 
 .bookCover {
@@ -10,8 +13,6 @@ h1 {
     box-shadow: 10px 5px 5px grey;
     padding: 5px;
     margin-left:150px;
-    display: flex;
-    flex-direction: column;
 }
 
 h2 {
@@ -24,14 +25,10 @@ h2 {
 
 .bookAuthor {
     margin-left: 150px;
-    display: flex;
-    flex-direction: column;
 }
 
 .rating {
     margin-left: 150px;
-    display: flex;
-    flex-direction: column;
 }
 
 .editButton {
@@ -61,23 +58,12 @@ h2 {
     box-shadow: 5px 5px 5px grey;
 }
 
-.synopsis {
-    max-width: 600px;
-    margin-left: 900px;
-    display: flex;
-    flex-direction: column;
-    align-items:flex-end;
-    justify-content:flex-end
-}
-
 .showBody {
     background-image: url("../images/40fc65faa2798e1294a93f17d9a7ba39.png");
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: center;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
 }
 
 .indexBody {
@@ -90,7 +76,6 @@ h2 {
     border-style: solid;
     border-radius: 5px;
     border-width: 2px;
-    /* box-shadow: 10px 5px 5px tan; */
     padding: 3px;
 }
 
@@ -110,7 +95,8 @@ h2 {
 
 .indexH1 {
     font-size: xxx-large;
-    color:tan
+    color:tan;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .newH1 {
@@ -135,4 +121,28 @@ input[type="number"], textarea {
     border-radius: 5px;
     box-shadow: 5px 5px 5px grey;
     color: black;
+}
+
+.matt {
+    font-family: cursive;
+}
+
+.fullShow {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftShow {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+
+.synopsis {
+    max-width: 600px;
+    margin-left: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    font-size: large;
 }
