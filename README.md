@@ -27,8 +27,8 @@ SHOW PAGE:
 - Add a 5 stars graphic for rating books.
 
 ## Code Snippit
-const { mongoose } = require('../db/connection');
 
+```js
 const booksSchema = new mongoose.Schema({
     title: String,
     author: String,
@@ -36,7 +36,4 @@ const booksSchema = new mongoose.Schema({
     rating: Number,
     synopsis: String,
 })
-
-const Books = mongoose.model('Books', booksSchema)
-
-module.exports = Books;
+```
