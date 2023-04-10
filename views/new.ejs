@@ -13,18 +13,19 @@
     <h1 class="newH1">Add a New Book</h1>
     <form method="POST" action="/books">
         <label class = "newFormField" for="title">Title:</label>
-        <input type="text" name="title" id="title">
+        <input type="text" name="title" id="title" size="40" maxlength="40">
         <br>
         <label class = "newFormField" for="author">Author:</label>
-        <input type="text" name="author" id="author">
+        <input type="text" name="author" id="author" size="40" maxlength="40">
         <br>
         <label class = "newFormField" for="image">Upload Book Cover:</label>
-        <input type="text" name="image" id="image">
+        <input type="text" name="image" id="image" size="40" maxlength="40">
         <br>
         <label class = "newFormField" for="rating">Rating:</label>
-        <input type="number" name="rating" id="rating">
+        <input type="number" name="rating" id="rating" size="40" maxlength="40">
         <label class = "newFormField" for="synopsis">Synopsis:</label>
-        <input type="text" name="synopsis" id="synopsis">
+        <textarea rows = "5" cols = "60" input type="text" name="synopsis" id="synopsis">
+            </textarea>
         <br>
         <input class="addButton" style="text-decoration: none; color: black; background-color: tan;" type="submit" value="Add Book" />
         <br>
