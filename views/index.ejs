@@ -10,9 +10,9 @@
     <title>mattreads - Index</title>
 </head>
 <body class="indexBody">
-    <h1 class = "indexH1" style="margin-left: 100px;"><span class="matt">matt</span>reads</h1>
-    <button class = "newButton", type="button", style="margin-left: 100px;"><a href="/books/New" style="text-decoration: none; color: black;">Add a New Book</a></button>
-    <div id="bookContainer" style="margin: 100px;">
+    <h1 class = "indexH1"><span class="matt">matt</span>reads</h1>
+    <button class = "newButton", type="button"><a href="/books/New" style="text-decoration: none; color: black;">Add a New Book</a></button>
+    <br>
     <% for(let i = 0; i < books.length; i++) { %>
     <a href = "/books/<%=books[i]._id%>"><img class = "bookCoverIndex" src="<%= books[i].image %>" alt="Book Image"></a>
     <% } %>

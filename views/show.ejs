@@ -11,15 +11,14 @@
 </head>
 <body class = "showBody" style="margin: 0px 100px 0px 100px;">
     <h2><%=books.title%></h2>
-    <div class = "fullShow">
-        <div class = "leftShow">
     <h4 class = "bookAuthor"><%=books.author%></h4>
     <h3><img class="bookCover" src="<%=books.image%>" alt="Book Cover Image"></h3>
     <h5 class = "rating">Rating: <%=books.rating%> stars</h5>
-    <button class="editButton" type="button"><a href="/books/<%= books._id %>/edit" style="text-decoration: none; color: black;">Edit Entry</a></button>
-    <button class = "backButton" type="button"><a href="/books" style="text-decoration: none; color: black;">Back</a></button>
-        </div>
     <p class="synopsis">Synopsis: <%=books.synopsis%></p>
-    </div>
+    <button class="editButton" type="button"><a href="/books/<%= books._id %>/edit" style="text-decoration: none; color: black;">Edit Entry</a></button>
+    <br>
+    <button class = "backButton" type="button"><a href="/books" style="text-decoration: none; color: black;">Back</a></button>
+        
+    
 </body>
 </html>
