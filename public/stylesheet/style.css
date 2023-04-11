@@ -5,6 +5,11 @@
 }
 
 
+@font-face {
+    font-family: 'scriptFont';
+    src: url("../fonts/josephsophia.ttf") format('truetype');
+}
+
 h1 {
     color: tan;
     font-size: xxx-large;
@@ -101,7 +106,6 @@ h2 {
 .indexH1 {
     font-size: xxx-large;
     color:tan;
-    font-family:
 }
 
 .newH1 {
@@ -129,16 +133,16 @@ input[type="number"], textarea {
 }
 
 .matt {
-    font-family: cursive;
+    font-family:cursive;
 }
 
 .synopsis {
     max-width: 600px;
-    margin-left: 150px;
     display: flex;
     flex-direction: column;
     flex:1;
     font-size: large;
+    margin-left: 150px;
 }
 
 @media screen and (max-width: 425px) {
@@ -152,7 +156,6 @@ input[type="number"], textarea {
     .newButton {
         margin-right: 150px;
     }
-
     
 }
 
@@ -167,4 +170,10 @@ input[type="number"], textarea {
     .newButton {
         margin-left: 135px;
     } 
+    .showBody {
+        margin: auto;
+    }
+    .synopsis {
+        margin-left: 150px;
+    }
 }
