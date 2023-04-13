@@ -13,20 +13,10 @@
     <h2><%=books.title%></h2>
     <h4 class = "bookAuthor"><%=books.author%></h4>
     <h3><img class="bookCover" src="<%=books.image%>" alt="Book Cover Image"></h3>
-    <div id="stars">
-        <%= function starRating(books.rating) { %>
-        <%= let stars = ""; %>
-        <%= for (let i = 1; i <= books.rating; i++) {%>
-            <%= stars += "<div class ='star'></div>"; %>
-       <%= } %>
-       <%= document.getElementById("stars").innerHTML = stars; %>
-    <%= } %>
-    <%= starRating(books.rating) %>
-</div>
+     <div class = 'rating'><%= convertToStar(books.rating) %></div>
     <p class="synopsis">Synopsis: <%=books.synopsis%></p>
     <button class="editButton" type="button"><a href="/books/<%= books._id %>/edit" style="text-decoration: none; color: black;">Edit Entry</a></button>
     <br>
-    <button class = "backButton" type="button"><a href="/books" style="text-decoration: none; color: black;">Back</a></button>
-        
+    <button class = "backButton" type="button"><a href="/books" style="text-decoration: none; color: black;">Back</a></button>   
 </body>
 </html>
