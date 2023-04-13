@@ -11,20 +11,20 @@
 </head>
 <body class = "indexBody" style="margin-left: 100px;">
     <h1 class="newH1">Add a New Book</h1>
-    <form class = "newForm" method="POST" action="/books">
+    <form class = "newForm" method="POST" action="/books" autocomplete="on">
         <label class = "newFormField" for="title">Title:</label>
-        <input type="text" name="title" id="title" size="80" maxlength="80">
+        <input type="text" name="title" id="title" size="80" maxlength="80" autocomplete="on">
         <br>
         <label class = "newFormField" for="author">Author:</label>
-        <input type="text" name="author" id="author" size="80" maxlength="80">
+        <input type="text" name="author" id="author" size="80" maxlength="80" autocomplete="on">
         <br>
         <label class = "newFormField" for="image">Upload Book Cover:</label>
-        <input type="text" name="image" id="image" size="80">
+        <input type="text" name="image" id="image" size="80" autocomplete="on">
         <br>
         <label class = "newFormField" for="rating">Rating:</label>
-        <input type="number" name="rating" id="rating" size="40" maxlength="40">
+        <input type="number" name="rating" id="rating" size="40" autocomplete="on">
         <label class = "newFormField" for="synopsis">Synopsis:</label>
-        <textarea rows = "10" cols = "80" input type="text" name="synopsis" id="synopsis">
+        <textarea rows = "10" cols = "80" input type="text" name="synopsis" id="synopsis" autocomplete="on">
             </textarea>
         <br>
         <input class="addButton" style="text-decoration: none; color: black; background-color: tan;" type="submit" value="Add Book" />

@@ -4,7 +4,6 @@
     src: url("../fonts/JMH\ Typewriter.ttf") format('truetype');
 }
 
-
 @font-face {
     font-family: 'scriptFont';
     src: url("../fonts/josephsophia.ttf") format('truetype');
@@ -177,4 +176,10 @@ input[type="number"], textarea {
     .synopsis {
         margin-left: 150px;
     }
+}
+
+.star {
+    display: inline-block;
+    background-image: url('../images/pngtree-star-vector-icon-png-image_696411.jpg');
+    background-size:cover;
 }
