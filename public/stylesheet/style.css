@@ -86,7 +86,6 @@ h2 {
     border-style: solid;
     border-radius: 5px;
     border-width: 2px;
-    padding: 2px;
 }
 
 .newButton {
@@ -182,4 +181,8 @@ input[type="number"], textarea {
     display: inline-block;
     background-image: url('../images/pngtree-star-vector-icon-png-image_696411.jpg');
     background-size:cover;
+}
+
+.rating {
+    margin-left: 150px;
 }

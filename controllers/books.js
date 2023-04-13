@@ -33,7 +33,7 @@ router.get('/:id', async (req, res) => {
     function convertToStar(num) {
         let starImage = "";
         for (let i = 1; i <= num; i++){
-            starImage += "<div class='star'></div>";
+            starImage += '/images/blackstar.png';
         }
         return starImage
     }
