@@ -30,14 +30,8 @@ router.get ('/seed', async (req, res) => {
 // Show
 router.get('/:id', async (req, res) => {
     const books = await Books.findById(req.params.id)
-    function convertToStar(num) {
-        let starImage = "";
-        for (let i = 1; i <= num; i++){
-            starImage += '/images/blackstar.png';
-        }
-        return starImage
-    }
-    res.render('show.ejs', {books, convertToStar})
+    const starImage = '/images/blackstar.png'
+    res.render('show.ejs', {books, starImage})
 })
 
 // Delete 

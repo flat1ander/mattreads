@@ -10,19 +10,19 @@
     <title><%=books.title%></title>
 </head>
 <body class = "showBody">
+<div class="bookDetail">
     <h2><%=books.title%></h2>
     <h4 class = "bookAuthor"><%=books.author%></h4>
     <h3><img class="bookCover" src="<%=books.image%>" alt="Book Cover Image"></h3>
-
     <div class="rating">
         <% for (let i =1; i <= books.rating; i++) {%>
-            <img src="<%= convertToStar(1) %>">
+            <img src="<%= starImage %>">
         <% } %>
     </div>
-
     <p class="synopsis">Synopsis: <%=books.synopsis%></p>
     <button class="editButton" type="button"><a href="/books/<%= books._id %>/edit" style="text-decoration: none; color: black;">Edit Entry</a></button>
     <br>
     <button class = "backButton" type="button"><a href="/books" style="text-decoration: none; color: black;">Back</a></button>   
+</div>
 </body>
 </html>

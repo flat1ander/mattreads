@@ -21,29 +21,18 @@ h1 {
     border-width: 3px;
     box-shadow: 10px 5px 5px grey;
     padding: 5px;
-    margin-left:150px;
 }
 
 h2 {
-    margin-left: 150px;
     margin-top:25px;
     display: flex;
     flex-direction: column;
     max-width: 600px;
 }
 
-.bookAuthor {
-    margin-left: 150px;
-}
-
-.rating {
-    margin-left: 150px;
-}
-
 .editButton {
     background-color: tan;
     border-radius: 5px;
-    margin-left: 150px;
     text-decoration: none;
     color: black;
     box-shadow: 10px 5px 5px grey;
@@ -52,7 +41,6 @@ h2 {
 .backButton {
     background-color: tan;
     border-radius: 5px;
-    margin-left: 150px;
     text-decoration: none;
     color: black;
     box-shadow: 5px 5px 5px grey;
@@ -67,12 +55,12 @@ h2 {
 
 .showBody {
     background-image: url("../images/2413176.jpg");
-    background-repeat: no-repeat;
-    object-fit: cover;
+    background-repeat: repeat;
+    object-fit: fill;
     background-position: center;
     background-size: cover;
     font-family: 'showFont';
-    margin-left: 200px;
+    margin: auto;
 }
 
 .indexBody {
@@ -141,27 +129,40 @@ input[type="number"], textarea {
     flex-direction: column;
     flex:1;
     font-size: large;
-    margin-left: 150px;
+}
+
+@media screen and (min-width: 769px){
+.bookDetail {
+    margin-left: 200px;
+}
 }
 
 @media screen and (max-width: 425px) {
     .bookCoverIndex {
-        margin-right: 150px;
-
+        margin-right: 130px;
     }
     .indexH1 {
-        margin-right: 150px;
+        margin-right: 130px;
     }
     .newButton {
-        margin-right: 150px;
+        margin-right: 130px;
     }
-    
+    .showBody {
+        background-image: url("../images/2413176.jpg");
+        background-repeat: repeat;
+        object-fit: fill;
+        background-position: center;
+        background-size: cover;
+        font-family: 'showFont';
+    }
+    .bookDetail {
+        padding: 50px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .bookCoverIndex {
         margin-left: 135px;
-
     }
     .indexH1 {
         margin-left: 135px;
@@ -170,19 +171,14 @@ input[type="number"], textarea {
         margin-left: 135px;
     } 
     .showBody {
-        margin: auto;
+        background-image: url("../images/2413176.jpg");
+        background-repeat: repeat;
+        object-fit: fill;
+        background-position: center;
+        background-size: cover;
+        font-family: 'showFont';
     }
-    .synopsis {
-        margin-left: 150px;
+    .bookDetail {
+        padding: 50px;
     }
-}
-
-.star {
-    display: inline-block;
-    background-image: url('../images/pngtree-star-vector-icon-png-image_696411.jpg');
-    background-size:cover;
-}
-
-.rating {
-    margin-left: 150px;
 }
