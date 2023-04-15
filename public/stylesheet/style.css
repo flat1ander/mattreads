@@ -66,7 +66,6 @@ h2 {
 .indexBody {
     background-image: url("../images/hySrQhk9QgN45B-0z8PR0bd8ZRyDZ9LnvzPSGaIb91Q.jpg");
     color: tan;
-    margin-left: 110px;
 }
 
 .bookCoverIndex {
@@ -135,40 +134,22 @@ input[type="number"], textarea {
 .bookDetail {
     margin-left: 350px;
 }
+.indexBody {
+    background-image: url("../images/hySrQhk9QgN45B-0z8PR0bd8ZRyDZ9LnvzPSGaIb91Q.jpg");
+    color: tan;
+    margin-left: 110px;
+}
 }
 
 @media screen and (max-width: 425px) {
     .bookCoverIndex {
-        margin-right: 130px;
+        margin-left: 50px;
     }
     .indexH1 {
-        margin-right: 130px;
+        margin-left: 50px;
     }
     .newButton {
-        margin-right: 130px;
-    }
-    .showBody {
-        background-image: url("../images/2413176.jpg");
-        background-repeat: repeat;
-        object-fit: fill;
-        background-position: center;
-        background-size: cover;
-        font-family: 'showFont';
-    }
-    .bookDetail {
-        padding: 50px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .bookCoverIndex {
-        margin-left: 135px;
-    }
-    .indexH1 {
-        margin-left: 135px;
-    }
-    .newButton {
-        margin-left: 135px;
+        margin-left: 50px;
     } 
     .showBody {
         background-image: url("../images/2413176.jpg");
@@ -182,3 +163,27 @@ input[type="number"], textarea {
         padding: 50px;
     }
 }
+
+@media screen and (width: 768px) {
+    .bookCoverIndex {
+        margin-left: 220px;
+    }
+    .indexH1 {
+        margin-left: 220px;
+    }
+    .newButton {
+        margin-left: 220px;
+    } 
+    .showBody {
+        background-image: url("../images/2413176.jpg");
+        background-repeat: repeat;
+        object-fit: fill;
+        background-position: center;
+        background-size: cover;
+        font-family: 'showFont';
+    }
+    .bookDetail {
+        padding: 50px;
+    }
+}
+

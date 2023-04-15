@@ -30,8 +30,7 @@ router.get ('/seed', async (req, res) => {
 // Show
 router.get('/:id', async (req, res) => {
     const books = await Books.findById(req.params.id)
-    const starImage = '/images/blackstar.png'
-    res.render('show.ejs', {books, starImage})
+    res.render('show.ejs', {books})
 })
 
 // Delete 
