@@ -26,11 +26,11 @@
         <%= books.synopsis %>
     </textarea>
     <br>
-    <input class = "editButtons" type="submit" value="submit" style="text-decoration: none; color: black; background-color: tan"/>
-    <button class = "editButtons" type="button"><a href="/books" style="text-decoration: none; color: black;">Back</a></button>
+    <input class = "editButtons" style= "font-size: medium; background-color: tan; color: black;" type="submit" value="submit" style="text-decoration: none; color: black; background-color: tan"/>
+    <button class = "editButtons" style= "font-size: medium" type="button"><a href="/books" style="text-decoration: none; color: black;">Back</a></button>
     </form>
     <form action="/books/<%=books._id%>?_method=DELETE" method="POST">
-        <input class = "editButtons" type="submit" value="Delete Book" style="text-decoration: none; color: black; background-color: tan">
+        <input id = "deleteButton" class = "editButtons" style= "font-size: medium; background-color: tan; color: darkred;" type="submit" value="Delete Book" style="text-decoration: none; color: black; background-color: tan">
         </form>
     </div>
 </body>

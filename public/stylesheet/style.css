@@ -35,6 +35,7 @@ h2 {
     text-decoration: none;
     color: black;
     box-shadow: 10px 5px 5px grey;
+    
 }
 
 .backButton {
@@ -51,6 +52,7 @@ h2 {
     max-width: fit-content;
     box-shadow: 5px 5px 5px grey;
     font-family: 'showFont';
+    font-size: medium;
 }
 
 .showBody {
@@ -85,7 +87,7 @@ h2 {
 
 .addButton {
     background-color: tan;
-    font-size: medium;
+    font-size: large;
     border-radius: 5px;
     box-shadow: 5px 5px 5px grey;
     font-family: 'showFont';
@@ -158,6 +160,10 @@ input[type="number"], textarea {
 .newForm{
     font-family: 'showFont';
     font-size: large;
+}
+
+#deleteButton {
+    box-shadow: 5px 5px 5px darkred;
 }
 
 @media screen and (min-width: 769px){
