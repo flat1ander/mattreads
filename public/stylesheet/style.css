@@ -27,7 +27,6 @@ h2 {
     margin-top:25px;
     display: flex;
     flex-direction: column;
-    max-width: 600px;
 }
 
 .editButton {
@@ -51,6 +50,7 @@ h2 {
     border-radius: 5px;
     max-width: fit-content;
     box-shadow: 5px 5px 5px grey;
+    font-family: 'showFont';
 }
 
 .showBody {
@@ -80,6 +80,7 @@ h2 {
     font-size: medium;
     border-radius: 5px;
     box-shadow: 5px 5px 5px grey;
+    font-family: 'showFont';
 }
 
 .addButton {
@@ -87,6 +88,7 @@ h2 {
     font-size: medium;
     border-radius: 5px;
     box-shadow: 5px 5px 5px grey;
+    font-family: 'showFont';
 }
 
 .indexH1 {
@@ -96,19 +98,24 @@ h2 {
 
 .newH1 {
     font-size: xxx-large;
-    color:tan
+    color:tan;
+    font-family: 'showFont';
 }
 
 .newFormField {
-    color: tan;
+    color: black;
+    font-size: large;
+    -webkit-text-stroke-width: 0.25px;
+    -webkit-text-stroke-color: black;
+    font-family: 'showFont';
 }
 
 input[type="text"], textarea {
-    background-color : grey
+    background-color : rgba(0,0,0,0.3);
 }
 
 input[type="number"], textarea {
-    background-color : grey
+    background-color : rgba(0,0,0,0.3);
 }
 
 .editButtons {
@@ -122,11 +129,34 @@ input[type="number"], textarea {
     font-family:cursive;
 }
 
+.reads{
+    font-family: 'showFont';
+}
+
 .synopsis {
     max-width: 1000px;
     display: flex;
     flex-direction: column;
     flex:1;
+    font-size: large;
+}
+
+.editContainer{
+    border-color:tan;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 3px;
+    background-image: url("../images/2413176.jpg");
+    display:inline-block;
+    padding: 10px;
+}
+
+.editButtons {
+    font-family: 'showFont';
+}
+
+.newForm{
+    font-family: 'showFont';
     font-size: large;
 }
 
@@ -139,6 +169,16 @@ input[type="number"], textarea {
     color: tan;
     margin-left: 110px;
 }
+}
+
+.formTitles{
+    font-size:x-large;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.editH1{
+    font-family: 'showFont';
 }
 
 @media screen and (max-width: 425px) {

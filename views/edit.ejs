@@ -9,18 +9,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Entry</title>
 </head>
-<body class = "indexBody" style="margin-left: 100px;">
-    <h1>Edit Entry:</h1>
+<body class = "indexBody">
+    <h1 class="editH1">Edit Entry:</h1>
+    <div class="editContainer">
     <form action="/books/<%=books._id%>?_method=PUT" method="POST">
-    Title: <input class="newFormField" type="text" name="title" value="<%= books.title %>">
+    <span class="formTitles">Title:</span><br><input class="newFormField" type="text" name="title" value="<%= books.title %>"> 
     <br>
-    Author: <input class="newFormField" type="text" name="author" value="<%= books.author %>">
+    <span class="formTitles">Author:</span><br><input class="newFormField" type="text" name="author" value="<%= books.author %>"> 
     <br>
-    Image: <input class="newFormField" type="text" name="image" value="<%= books.image %>">
+    <span class="formTitles">Book Cover Image:</span><br><input class="newFormField" type="text" name="image" value="<%= books.image %>"> 
     <br>
-    Rating: <input class="newFormField" type="text" name="rating" value="<%= books.rating %>">
+    <span class="formTitles">Rating:</span><br><input class="newFormField" type="text" name="rating" value="<%= books.rating %>"> 
     <br>
-    Synopsis: <input class="newFormField" type="text" name="synopsis" value="<%= books.synopsis %>" size="100">
+    <span class="formTitles">Synopsis:</span><br>
+    <textarea class="newFormField" rows = "20" cols = "80" input type="text" name="synopsis" id="synopsis" autocomplete="on">
+        <%= books.synopsis %>
+    </textarea>
     <br>
     <input class = "editButtons" type="submit" value="submit" style="text-decoration: none; color: black; background-color: tan"/>
     <button class = "editButtons" type="button"><a href="/books" style="text-decoration: none; color: black;">Back</a></button>
@@ -28,5 +32,6 @@
     <form action="/books/<%=books._id%>?_method=DELETE" method="POST">
         <input class = "editButtons" type="submit" value="Delete Book" style="text-decoration: none; color: black; background-color: tan">
         </form>
+    </div>
 </body>
 </html>
