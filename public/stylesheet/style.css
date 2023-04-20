@@ -4,11 +4,6 @@
     src: url("../fonts/JMH\ Typewriter.ttf") format('truetype');
 }
 
-@font-face {
-    font-family: 'scriptFont';
-    src: url("../fonts/josephsophia.ttf") format('truetype');
-}
-
 h1 {
     color: tan;
     font-size: xxx-large;
@@ -168,7 +163,7 @@ input[type="number"], textarea {
 
 @media screen and (min-width: 769px){
 .bookDetail {
-    margin-left: 350px;
+    margin-left: 300px;
 }
 .indexBody {
     background-image: url("../images/hySrQhk9QgN45B-0z8PR0bd8ZRyDZ9LnvzPSGaIb91Q.jpg");
@@ -181,6 +176,7 @@ input[type="number"], textarea {
     font-size:x-large;
     font-family:Arial, Helvetica, sans-serif;
     color: black;
+    font-family: 'showFont';
 }
 
 .editH1{
